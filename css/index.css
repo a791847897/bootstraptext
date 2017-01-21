@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    cursor: url("../images/343-emotion-spiderman (1).png"), auto;
+}
+
+
+
+.spin {
+    -webkit-animation: spin 5s linear infinite;
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 1s linear 1;
+}
+
+.fadeInRight {
+    animation: fadeInRight 1s linear 1;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(-0deg);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+body {
+    background-image: url('../images/21.jpg');
+    font-family: 微软雅黑, Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #07192F;
+    color: #ffffff;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.blogheader_h1 {
+    color: #DAB866;
+    margin-left: 30px;
+    text-shadow: 5px 5px 5px #FF0000;
+
+}
+
+.content_cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 0;
+    background: #000;
+    color: #DAB866;
+    vertical-align: middle;
+    transition: opacity 500ms;
+    padding: 30px;
+}
+
+.logo_display {
+    position: relative;
+    opacity: 1;
+}
+
+.logo_display > img {
+    display: block;
+}
+
+.content_cover:hover {
+    opacity: 0.7;
+    display: block;
+}
+
+.content_cover > h3 {
+    text-align: right;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="init.js"></script>
+    <script src="config.js"></script>
+    <style>
+        .left{
+            border: 1px solid red;
+            height: 200px;
+            width: 30%;
+            float: left;
+            background-color: #00A000;
+        }
+        .right{
+            border: 1px solid red;
+            float: right;
+            height: 200px;
+            width: 30%;
+            background-color: #DAB866;
+        }
+        .middle{
+            float: left;
+            border: 1px solid red;
+            height: 200px;
+            width: 30%;
+            background-color:#0e84b5;
+        }
+    </style>
+</head>
+<body>
+<div><button ui-sref="home">点击</button></div>
+<div>
+    <div class="left"></div>
+<div class="middle" ui-view></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>

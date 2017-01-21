@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app="fApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="init.js"></script>
+    <script src="config.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <header class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
+            <div class="col-md-6 fadeInLeft">
+                <div class="blogheader_img col-xs-12 col-md-12"><img src="images/6.jpg"></div>
+                <div class="blogheader_h1 col-md-12"><h1>浩彬的个人博客</h1></div>
+
+            </div>
+            <div class="logo col-md-6 ">
+                <div class="logo_display fadeInRight"><img src="images/logo.jpg">
+                    <div class="content_cover"><h2>Everyone has their darkside,all you need to do is to controller
+                        it,don't let it border your life,with great power comes great responsibility. </h2>
+                        <h3>--By 冯浩彬</h3></div>
+                </div>
+            </div>
+        </header>
+
+    </div>
+
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" ui-sref="home">首页</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" ui-sref="article">文章分享</a></li>
+                    <li><a href="#" ui-sref="tech">技巧交流</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">娱乐天地 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#" ui-sref="music">音乐天堂</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#" ui-sref="movie">电影天堂</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#" ui-sref="mix">科技大杂烩</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="请输入关键字">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+
+            </div><!-- /.navbar-collapse -->
+
+        </nav>
+    </div>
+</div>
+
+<div ui-view class="container">
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">文章列表</div>
+            <div class="panel-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

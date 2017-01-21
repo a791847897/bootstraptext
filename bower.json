@@ -1,0 +1,22 @@
+{
+  "name": "BootStraptext",
+  "authors": [
+    "a791847897 <791847897@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.1",
+    "angular-ui-router": "^0.4.2"
+  }
+}
